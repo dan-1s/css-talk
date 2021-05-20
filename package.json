@@ -1,0 +1,32 @@
+{
+  "name": "css-talk",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "image-proxy": "node imageProxy.js",
+    "start": "sirv public --no-clear",
+    "presentation": "npm run start & npm run image-proxy"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup": "^2.48.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "postcss": "^8.2.15",
+    "prettier": "^2.3.0",
+    "prettier-plugin-svelte": "^2.3.0",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.3"
+  },
+  "dependencies": {
+    "codemirror": "^5.61.1",
+    "date-fns": "^2.21.3",
+    "express": "^4.17.1",
+    "sirv-cli": "^1.0.11"
+  }
+}
