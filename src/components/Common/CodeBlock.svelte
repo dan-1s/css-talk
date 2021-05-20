@@ -27,7 +27,7 @@
     tabSize: 2,
     value: '',
     mode: 'css',
-    keyMap: 'vim',
+    // keyMap: 'vim', // Uncomment this lines so you get vim commands like I prefer :)
     autoCloseBrackets: true,
     autoCloseTags: true,
     foldGutter: true,
