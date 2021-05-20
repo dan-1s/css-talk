@@ -1,5 +1,3 @@
-// TODO: add it to store
-
 const shared = `
     .header {
         grid-area: top;
