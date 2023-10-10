@@ -1,11 +1,13 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte';
   import CodeMirror from 'codemirror';
-  import vim from 'codemirror/keymap/vim';
-  import css from 'codemirror/mode/css/css';
+  import 'codemirror/keymap/vim';
+  import 'codemirror/mode/css/css';
   import Window from './Window.svelte';
   import 'codemirror/lib/codemirror.css';
   import 'codemirror/theme/material-ocean.css';
+
+  const mode = import.meta.env.VITE_EDITOR_MODE;
 
   export let code;
   export let height = null;
@@ -19,6 +21,7 @@
   newStyleEl.id = styleId;
 
   const dispatch = createEventDispatcher();
+  const maybeUseVim = mode === 'vim' ? { keyMap: 'vim' } : {};
 
   const opts = {
     lineWrapping: true,
@@ -27,12 +30,12 @@
     tabSize: 2,
     value: '',
     mode: 'css',
-    // keyMap: 'vim', // Uncomment this lines so you get vim commands like I prefer :)
     autoCloseBrackets: true,
     autoCloseTags: true,
     foldGutter: true,
     theme: 'material-ocean',
     gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter'],
+    ...maybeUseVim,
   };
 
   let editor;
