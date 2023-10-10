@@ -48,12 +48,7 @@
 
 <div class="container">
   <div class="code">
-    <CodeBlock
-      questionMark
-      styleId="{styleId}"
-      height="600px"
-      code="{revealCode}"
-    />
+    <CodeBlock questionMark {styleId} height="600px" code="{revealCode}" />
   </div>
   <div class="result">
     <div class="reveal-container">

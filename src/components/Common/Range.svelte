@@ -38,12 +38,5 @@
 
 <div class="input-range" class:rotated>
   <label for="{id}">{title || 'Missing title'} ({value / divider})</label>
-  <input
-    id="{id}"
-    type="range"
-    min="{min}"
-    max="{max}"
-    step="{step}"
-    bind:value
-  />
+  <input {id} type="range" {min} {max} {step} bind:value />
 </div>

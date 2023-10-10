@@ -40,4 +40,4 @@
   </h2>
 </div>
 
-<Tabs name="{name}" components="{tabs}" />
+<Tabs {name} components="{tabs}" />

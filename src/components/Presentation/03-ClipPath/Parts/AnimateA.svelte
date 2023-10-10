@@ -27,12 +27,7 @@
 </style>
 
 <div class="container">
-  <CodeBlock
-    styleId="{styleId}"
-    questionMark
-    height="600px"
-    code="{animationA}"
-  />
+  <CodeBlock {styleId} questionMark height="600px" code="{animationA}" />
 
   <div class="result">
     <img

@@ -35,12 +35,7 @@
 
 <div class="container">
   <div class="code">
-    <CodeBlock
-      styleId="{styleId}"
-      questionMark
-      height="600px"
-      code="{pathOutside}"
-    />
+    <CodeBlock {styleId} questionMark height="600px" code="{pathOutside}" />
   </div>
   <div class="result">
     <img

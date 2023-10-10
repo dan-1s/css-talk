@@ -56,12 +56,7 @@
   </div>
 
   <div>
-    <CodeBlock
-      styleId="{styleId}"
-      height="300px"
-      questionMark
-      code="{exampleCode}"
-    />
+    <CodeBlock {styleId} height="300px" questionMark code="{exampleCode}" />
 
     <div class="controls">
       {#each css as intro, i}

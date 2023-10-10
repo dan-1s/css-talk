@@ -80,12 +80,7 @@
 
 <div class="grid-areas-container">
   <div class="left">
-    <CodeBlock
-      styleId="{styleId}"
-      questionMark
-      height="100%"
-      code="{exampleCode}"
-    />
+    <CodeBlock {styleId} questionMark height="100%" code="{exampleCode}" />
   </div>
 
   <div class="right">

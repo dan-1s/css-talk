@@ -1,15 +1,15 @@
-import { defineConfig } from "vite";
-import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 export default defineConfig({
-    build: {
-        outDir: "dist",
-        emptyOutDir: true,
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+  },
+  server: {
+    hmr: {
+      port: 443,
     },
-    server: {
-        hmr: {
-            port: 443,
-        },
-    },
-    plugins: [svelte()],
+  },
+  plugins: [svelte()],
 });

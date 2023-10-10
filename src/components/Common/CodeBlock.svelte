@@ -78,12 +78,18 @@
   }
 
   :global(.CodeMirror-code) {
-    font-family: 'Operator Mono', 'Source Code Pro', Menlo, Monaco, Consolas,
-      Courier New, monospace;
+    font-family:
+      'Operator Mono',
+      'Source Code Pro',
+      Menlo,
+      Monaco,
+      Consolas,
+      Courier New,
+      monospace;
   }
 </style>
 
-<Window height="{height}" hidden="{hidden}" questionMark="{questionMark}">
+<Window {height} {hidden} {questionMark}>
   <!-- svelte-ignore a11y-positive-tabindex -->
   <textarea bind:this="{refs.editor}" value="{code}"></textarea>
 </Window>

@@ -57,7 +57,7 @@
 
 <div class="grid-repeat">
   <div class="top-left">
-    <CodeBlock styleId="{styleId}" height="100%" code="{exampleCode}" />
+    <CodeBlock {styleId} height="100%" code="{exampleCode}" />
   </div>
 
   <div class="top-middle">

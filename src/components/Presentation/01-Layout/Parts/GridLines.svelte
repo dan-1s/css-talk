@@ -85,7 +85,7 @@
 
 <div class="top-grid">
   <div class="left">
-    <CodeBlock styleId="{styleId}" height="100%" code="{exampleCode}" />
+    <CodeBlock {styleId} height="100%" code="{exampleCode}" />
   </div>
   <div class="right">
     <Range

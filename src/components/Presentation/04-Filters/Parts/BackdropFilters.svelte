@@ -68,12 +68,7 @@
   </div>
 
   <div class="code">
-    <CodeBlock
-      styleId="{styleId}"
-      questionMark
-      height="400px"
-      code="{selectedCode}"
-    />
+    <CodeBlock {styleId} questionMark height="400px" code="{selectedCode}" />
   </div>
 
   <div class="controls">

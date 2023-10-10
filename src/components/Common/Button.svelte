@@ -13,8 +13,10 @@
   .active {
     color: var(--primary-color-40);
     border-color: var(--primary-color-40);
-    box-shadow: 1px 1px 0 var(--primary-color-80),
-      2px 2px 0 var(--primary-color-50), 5px 5px 0 black;
+    box-shadow:
+      1px 1px 0 var(--primary-color-80),
+      2px 2px 0 var(--primary-color-50),
+      5px 5px 0 black;
   }
 
   button {

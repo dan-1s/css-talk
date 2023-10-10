@@ -1,65 +1,65 @@
 body {
-	margin: 0;
+  margin: 0;
 }
 
-body, button {
-	font-family: Arial, sans-serif;
+body,
+button {
+  font-family: Arial, sans-serif;
 }
 
 /* Utility classes */
 
 .full-screen {
-	height: 100vh;
+  height: 100vh;
 }
 
 .grid-center {
-	display: grid;
-	place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 .block {
-	display: block;
+  display: block;
 }
 
 .upcase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .xl {
-	font-size: 15rem;
+  font-size: 15rem;
 }
 
 .lg {
-	font-size: 10rem;
+  font-size: 10rem;
 }
 
 .md {
-	font-size: 4rem;
+  font-size: 4rem;
 }
 
 .sm {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 .xs {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
-	.xl {
-		font-size: 8rem;
-	}
+  .xl {
+    font-size: 8rem;
+  }
 
-	.lg {
-		font-size: 4rem;
-	}
+  .lg {
+    font-size: 4rem;
+  }
 
-	.md {
-		font-size: 2.5rem;
-	}
+  .md {
+    font-size: 2.5rem;
+  }
 
-	.sm {
-		font-size: 2rem;
-	}
-
+  .sm {
+    font-size: 2rem;
+  }
 }

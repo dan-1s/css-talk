@@ -61,7 +61,7 @@
 
 <div class="container">
   <div class="left">
-    <CodeBlock styleId="{styleId}" height="300px" code="{root}" />
+    <CodeBlock {styleId} height="300px" code="{root}" />
   </div>
 
   <div class="right">

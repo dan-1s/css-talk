@@ -88,7 +88,7 @@
 <div class="container">
   <div class="code">
     <CodeBlock
-      styleId="{styleId}"
+      {styleId}
       height="400px"
       code="{fixed ? lazyLoadFix : lazyLoad}"
     />

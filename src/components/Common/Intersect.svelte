@@ -45,9 +45,5 @@
 </script>
 
 <div bind:this="{element}">
-  <slot
-    intersectionRatio="{intersectionRatio}"
-    unobserve="{unobserve}"
-    intersectionObserverSupport="{intersectionObserverSupport}"
-  />
+  <slot {intersectionRatio} {unobserve} {intersectionObserverSupport} />
 </div>

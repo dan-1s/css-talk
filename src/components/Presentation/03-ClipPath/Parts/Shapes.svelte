@@ -49,12 +49,7 @@
 
 <div class="container">
   <div class="code" class:clip-path-img-a="{toggled}">
-    <CodeBlock
-      styleId="{styleId}"
-      questionMark
-      height="100%"
-      code="{selectedCode}"
-    />
+    <CodeBlock {styleId} questionMark height="100%" code="{selectedCode}" />
   </div>
 
   <div class="controls">

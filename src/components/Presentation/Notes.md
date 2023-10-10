@@ -3,9 +3,8 @@
 Hi,
 
 My name is Dan. I'm a software developer working for Webstep. I'm passionate about
-programming, front- and backend. I've worked a lot with React, Node, Elixir and 
+programming, front- and backend. I've worked a lot with React, Node, Elixir and
 currently I work with Svelte.
-
 
 ## Layout
 
@@ -29,6 +28,7 @@ In the first layout we have 3x4 grid, in the second 2x4 and the third 2x4. As yo
 the grid-template-areas are just moved around, this is how it works.
 
 We can adjust the grid:
+
 ```
 Play around - change the values of the grid, some suggestions:
 - Make footer take up all horizontal space
@@ -57,7 +57,6 @@ Then we have the `auto-fit` that wraps the content automatically given minmax co
 with a specific number it break boundaries if it won't fit as we can see.
 `(<Set a number that show how breaks the boundary>)`
 
-
 There's also `auto-fill` option, the easiest way to explain the difference is by an
 example. `(<Start with a high number of cards and go down to one>)`.
 
@@ -83,7 +82,6 @@ in a 8x8 grid it's off by one.
 
 We can overlap our grid items easily if we want, and sometimes we want this to happen in a
 design.
-
 
 ## Custom Properties
 
@@ -135,7 +133,6 @@ and the consumer can apply his/her own style configuration at a component level.
 Here we can see how we can leverage custom properties to create a color palette. These
 are used in my presentation, but let's change our theme a bit going forward.
 `(<pick new colors>)`
-
 
 ## Clip path
 
@@ -193,7 +190,6 @@ We use another simple shape `circle` and transition between 0 and 100 percent.
 
 This effect can be really cool when used with full screen images.
 
-
 ## Filter and Mask
 
 ### 1. Intro
@@ -234,7 +230,6 @@ We can move the position around to adjust where the mask is going to be placed.
 With some css changes we can make the person jump out of the box. This looks pretty cool!
 `(<use some css transforms>)`
 
-
 ## Images and layout
 
 ### 1. Reserve space for images
@@ -269,11 +264,3 @@ and when it intersects according to threshold it will add the `src` attribute an
 If the threshold is 0.7 it means that it will fire when the image is 70% visible.
 
 This workaround uses SVG with viewBox matching our dimensions.
-
-
-
-
-
-
-
-

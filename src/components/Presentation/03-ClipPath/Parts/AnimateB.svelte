@@ -27,7 +27,7 @@
 </style>
 
 <div class="container">
-  <CodeBlock styleId="{styleId}" height="600px" code="{animationB}" />
+  <CodeBlock {styleId} height="600px" code="{animationB}" />
 
   <div class="result">
     <img

@@ -96,8 +96,12 @@
 
     color: white;
     -webkit-text-stroke: 1px black;
-    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-      -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow:
+      3px 3px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 
   button:hover {
@@ -135,5 +139,5 @@
   <div class="top">
     <span class="mac-dots"></span>
   </div>
-  <slot hidden="{hidden}" />
+  <slot {hidden} />
 </div>

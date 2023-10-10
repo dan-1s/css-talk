@@ -171,12 +171,7 @@
   </div>
 
   <div class="code">
-    <CodeBlock
-      styleId="{styleId}"
-      height="400px"
-      questionMark
-      code="{codeExample}"
-    />
+    <CodeBlock {styleId} height="400px" questionMark code="{codeExample}" />
   </div>
 
   <div class="code-controls">

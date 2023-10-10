@@ -77,7 +77,7 @@
 <div class="container">
   <div class="code">
     <CodeBlock
-      styleId="{styleId}"
+      {styleId}
       height="400px"
       questionMark
       code="{fixed ? imagesReservingSpace : imagesNotReservingSpace}"

@@ -69,12 +69,7 @@
   </div>
 
   <div class="code">
-    <CodeBlock
-      styleId="{styleId}"
-      questionMark
-      height="400px"
-      code="{maskImage}"
-    />
+    <CodeBlock {styleId} questionMark height="400px" code="{maskImage}" />
   </div>
 
   <div class="controls">
