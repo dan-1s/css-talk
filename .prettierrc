@@ -9,9 +9,10 @@
   "jsxBracketSameLine": true,
   "arrowParens": "always",
   "endOfLine": "auto",
-  "svelteSortOrder": "scripts-styles-markup",
+  "svelteSortOrder": "options-scripts-styles-markup",
   "svelteStrictMode": true,
   "svelteAllowShorthand": true,
   "svelteBracketNewLine": true,
-  "svelteIndentScriptAndStyle": true
+  "svelteIndentScriptAndStyle": true,
+  "plugins": ["prettier-plugin-svelte"]
 }
