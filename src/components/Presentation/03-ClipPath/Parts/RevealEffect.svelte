@@ -57,7 +57,7 @@
         height="1333"
         class="front-img"
         loading="lazy"
-        src="/images/artem-beliaikin-EjvSaFMhz9k-unsplash.png"
+        src="/images/artem-beliaikin-unsplash.png"
         alt=""
       />
       <img
@@ -66,7 +66,7 @@
         class="back-img"
         loading="lazy"
         class:show-back-img="{reveal}"
-        src="/images/artem-beliaikin-EjvSaFMhz9k-unsplash.jpg"
+        src="/images/artem-beliaikin-unsplash.jpg"
         alt=""
       />
     </div>

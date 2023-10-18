@@ -28,6 +28,11 @@
     visibility: hidden;
   }
 
+  h1,
+  h2 {
+    text-align: left;
+  }
+
   p {
     line-height: 1.5rem;
   }
@@ -44,7 +49,7 @@
       loading="lazy"
       on:load="{() => (imageLoaded = true)}"
       class="img-shape-outside"
-      src="/images/lauren-mancke-DpphPG9ENsI-unsplash.jpg"
+      src="/images/lauren-mancke-unsplash.jpg"
       alt=""
     />
     <div class="star-wars-ipsum" class:show="{imageLoaded}">

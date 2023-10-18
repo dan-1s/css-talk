@@ -50,7 +50,7 @@
       height="1188"
       loading="lazy"
       class="intro-filters"
-      src="/images/drew-graham-PVyhz0wmHdo-unsplash.png"
+      src="/images/drew-graham-unsplash.png"
       alt=""
     />
   </div>

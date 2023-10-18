@@ -39,6 +39,7 @@
 
   .img-filter-box {
     z-index: 3;
+    pointer-events: none;
   }
 
   .bg,
@@ -59,9 +60,9 @@
 <div class="container">
   <div class="bg">
     <img
-      width="1000"
-      height="667"
-      src="/images/chris-lejarazu-08wxrVv5rp8-unsplash.jpg"
+      width="2000"
+      height="1699"
+      src="/images/chris-lejarazu-unsplash.jpg"
       alt=""
     />
     <div class="img-filter-box" style="--y: {posY}%; --x: {posX}%;"></div>

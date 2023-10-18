@@ -31,11 +31,11 @@
 
   <div class="result">
     <img
-      width="1000"
-      height="1200"
+      width="1199"
+      height="1500"
       loading="lazy"
       class="clip-path-img-animate-b"
-      src="/images/max-bender-VmX3vmBecFE-unsplash.jpg"
+      src="/images/max-bender-unsplash.jpg"
       alt=""
     />
   </div>

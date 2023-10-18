@@ -1,14 +1,21 @@
 <script>
   import UrlAnchorLinks from './components/Common/Tabs/UrlAnchorLinks.svelte';
-  import Timer from './components/Common/Timer/Timer.svelte';
-
   import Overview from './components/Presentation/00-Overview/Overview.svelte';
   import Layout from './components/Presentation/01-Layout/Layout.svelte';
   import CustomProperties from './components/Presentation/02-CustomProperties/CustomProperties.svelte';
   import ClipPath from './components/Presentation/03-ClipPath/ClipPath.svelte';
   import Filters from './components/Presentation/04-Filters/Filters.svelte';
-  import ImagesAndLayout from './components/Presentation/05-ImagesAndLayout/ImagesAndLayout.svelte';
-  import TheEnd from './components/Presentation/06-TheEnd/TheEnd.svelte';
+  import AspectRatio from './components/Presentation/05-AspectRatio/AspectRatio.svelte';
+  import ScrollSnap from './components/Presentation/06-ScrollSnap/ScrollSnap.svelte';
+
+  const components = [
+    Layout,
+    CustomProperties,
+    ClipPath,
+    Filters,
+    AspectRatio,
+    ScrollSnap,
+  ];
 </script>
 
 <style>
@@ -64,31 +71,11 @@
 <UrlAnchorLinks />
 
 <main>
-  <Timer />
-
   <Overview />
 
-  <section>
-    <Layout />
-  </section>
-
-  <section>
-    <CustomProperties />
-  </section>
-
-  <section>
-    <ClipPath />
-  </section>
-
-  <section>
-    <Filters />
-  </section>
-
-  <section>
-    <ImagesAndLayout />
-  </section>
-
-  <section>
-    <TheEnd />
-  </section>
+  {#each components as component}
+    <section>
+      <svelte:component this="{component}" />
+    </section>
+  {/each}
 </main>

@@ -230,7 +230,7 @@ We can move the position around to adjust where the mask is going to be placed.
 With some css changes we can make the person jump out of the box. This looks pretty cool!
 `(<use some css transforms>)`
 
-## Images and layout
+## Aspect ratio
 
 ### 1. Reserve space for images
 
@@ -247,20 +247,6 @@ width to height relation (aspect-ratio), just use the image dimensions, and you'
 
 Just make sure your css for the image is responsive, e.g. `width: 100%; height: auto;`
 
-### 2. What about lazy loading
+--
 
-Chrome reserves space even if the image has no `src` attribute, but you get this lines around
-the images, and of course we have no have images now, so that's bad.
-
-Let's fix it! Chrome, Firefox and Edge all have native lazy loading for images. So we can keep the
-`src` attribute and add `loading=lazy` to our images.
-
-Safari has it behind an experimental flag, but we can do our own lazy load?
-
-### 3. Manual Lazy loading and reserve space
-
-Without a `src` attribute Safari it will not reserve space. Here we use intersection observer
-and when it intersects according to threshold it will add the `src` attribute and load the image.
-If the threshold is 0.7 it means that it will fire when the image is 70% visible.
-
-This workaround uses SVG with viewBox matching our dimensions.
+TODO: Add more talking points for aspect ratio and css scroll snapping ...

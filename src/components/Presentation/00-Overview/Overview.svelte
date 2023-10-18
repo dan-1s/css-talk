@@ -6,7 +6,8 @@
     'custom-properties': 'Custom Properties',
     'clip-path': 'Clip Path',
     'filters-and-masks': 'Filter and Mask',
-    'images-and-layout': 'Images and Layout',
+    'aspect-ratio': 'Aspect Ratio',
+    'scroll-snap': 'Scroll Snap',
   };
 </script>
 

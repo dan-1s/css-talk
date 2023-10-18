@@ -63,7 +63,7 @@
       class="mask-image"
       width="1000"
       height="667"
-      src="/images/adam-kool-ndN00KmbJ1c-unsplash.jpg"
+      src="/images/adam-kool-unsplash.jpg"
       alt=""
     />
   </div>
@@ -73,11 +73,7 @@
   </div>
 
   <div class="controls">
-    <img
-      class="mask-thumb"
-      src="/images/varun-gaba-wFlbBhVZTDI-unsplash.png"
-      alt=""
-    />
+    <img class="mask-thumb" src="/images/varun-gaba-unsplash.png" alt="" />
     <Range
       title="Y"
       rotated="{false}"

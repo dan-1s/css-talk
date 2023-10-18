@@ -75,6 +75,12 @@
 </script>
 
 <style>
+  :global(.CodeMirror) {
+    /* override inline style form code mirror to fix 1px line between top part
+    in window wrapper and the code section */
+    clip-path: inset(-1px) !important;
+  }
+
   :global(.CodeMirror-cursor),
   :global(.CodeMirror-code) {
     font-size: var(--code-font-size, 1.2rem);

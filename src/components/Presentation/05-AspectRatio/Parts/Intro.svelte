@@ -2,7 +2,11 @@
   import Button from '../../../Common/Button.svelte';
   import Tablet from '../../../Common/Tablet.svelte';
   import CodeBlock from '../../../Common/CodeBlock.svelte';
-  import { lazyLoad, nativeLazyLoadFix } from '../code-examples';
+  import {
+    imagesNotReservingSpace,
+    imagesReservingSpace,
+    withLazyLoading,
+  } from '../code-examples';
   import Range from '../../../Common/Range.svelte';
   import { createImagePicker } from '../../../../utils';
 
@@ -15,6 +19,12 @@
   let cacheBuster = 0;
   let fixed = false;
   let delay = 0;
+  let lazyLoad = false;
+
+  let lazyLoadAttr = {};
+  $: if (lazyLoad) {
+    lazyLoadAttr = { loading: 'lazy' };
+  }
 
   function reload() {
     show = false;
@@ -26,18 +36,14 @@
   }
 
   function imageAttributes() {
-    const { name, width, height } = pickImage();
+    const { name, height, width } = pickImage();
 
     const delayProxyServer = 'http://localhost:8000';
-    const url = `${delayProxyServer}/${name}?bust=${cacheBuster}&delay=${delay}`;
+    const attr = {
+      src: `${delayProxyServer}/${name}?bust=${cacheBuster}&delay=${delay}`,
+    };
 
-    let attr = {};
-    if (fixed) {
-      attr.src = url;
-      attr.loading = 'lazy';
-    }
-
-    return { ...attr, width, height };
+    return fixed ? { ...attr, width, height } : attr;
   }
 </script>
 
@@ -61,6 +67,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
   }
 
   img {
@@ -78,7 +85,12 @@
     <CodeBlock
       {styleId}
       height="400px"
-      code="{fixed ? nativeLazyLoadFix : lazyLoad}"
+      questionMark
+      code="{fixed
+        ? imagesReservingSpace
+        : lazyLoad
+        ? withLazyLoading
+        : imagesNotReservingSpace}"
     />
 
     <div class="range">
@@ -108,9 +120,12 @@
       <Button onClickHandler="{() => (fixed = !fixed)}">
         {fixed ? 'Break it' : 'Fix it'}
       </Button>
+
       <Button onClickHandler="{reload}">
         {cacheBuster === 0 ? 'Load' : 'Reload'}
       </Button>
+
+      <Button onClickHandler="{() => (lazyLoad = !lazyLoad)}">Lazy load</Button>
     </div>
 
     <Tablet widthToHeightRatio="{1.5}" maxWidth="{tabletMaxWidth}px">
@@ -120,7 +135,7 @@
             Twitter is exploring the use of Facebook-style emoji reactions
           </h2>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(1)} alt="" />
 
           <p>
             If you’re old enough to remember the outrage that followed Twitter’s
@@ -144,7 +159,7 @@
             quas, rerum sequi veniam.
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(2)} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
@@ -177,7 +192,7 @@
             Dolorum.
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(3)} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -198,7 +213,7 @@
         <section>
           <h2>Staying ahead of the curve on Google’s Core Web Vitals</h2>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(4)} alt="" />
 
           <p>
             One year. That’s how long Google gave developers to start
@@ -218,7 +233,7 @@
             mollitia nostrum perferendis quidem sequi tempore ullam vero!
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(5)} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis
@@ -257,7 +272,7 @@
         <section>
           <h2>When Clubhouse Runs Out of Money</h2>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(6)} alt="" />
 
           <p>
             Clubhouse is prodigious. At just over a year old, the exclusive,
@@ -284,7 +299,7 @@
             nisi quos sequi ut.
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(7)} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
@@ -314,7 +329,7 @@
             struggling
           </h2>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes()} alt="" />
 
           <p>
             The video game retailer's shares are still far higher after
@@ -335,7 +350,7 @@
             velit veritatis?
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes()} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
@@ -358,7 +373,7 @@
             voluptatum!
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes()} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
@@ -372,7 +387,7 @@
         <section>
           <h2>Chrome now instantly captions audio and video on the web</h2>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(11)} alt="" />
 
           <p>
             The accessibility feature was previously exclusive to some Pixel and
@@ -394,7 +409,7 @@
             odio rem, saepe? Minus modi, veritatis.
           </p>
 
-          <img {...imageAttributes()} alt="" />
+          <img {...lazyLoadAttr} {...imageAttributes(12)} alt="" />
 
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab porro

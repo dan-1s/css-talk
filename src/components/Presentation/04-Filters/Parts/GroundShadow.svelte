@@ -131,27 +131,19 @@
     <div class="shadow-example" class:show="{selectedImageControl === 'doll'}">
       <img
         class="shadow-ground"
-        src="/images/mockup-graphics-aUkYaG12Dgs-unsplash.png"
+        src="/images/mockup-graphics-unsplash.png"
         alt=""
       />
-      <img
-        class="doll"
-        src="/images/mockup-graphics-aUkYaG12Dgs-unsplash.png"
-        alt=""
-      />
+      <img class="doll" src="/images/mockup-graphics-unsplash.png" alt="" />
     </div>
 
     <div class="shadow-example" class:show="{selectedImageControl === 'drink'}">
       <img
         class="shadow-ground"
-        src="/images/nikita-tikhomirov-roMo1sOj8q8-unsplash.png"
+        src="/images/nikita-tikhomirov-unsplash.png"
         alt=""
       />
-      <img
-        class="drink"
-        src="/images/nikita-tikhomirov-roMo1sOj8q8-unsplash.png"
-        alt=""
-      />
+      <img class="drink" src="/images/nikita-tikhomirov-unsplash.png" alt="" />
     </div>
   </div>
 

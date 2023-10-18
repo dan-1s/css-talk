@@ -1,5 +1,5 @@
 <script>
-  import { fullscreen } from '../../../actions';
+  import { fullscreen } from '../../../actions/fullscreen';
   import Tabs from '../../Common/Tabs/Tabs.svelte';
   import GroundShadow from './Parts/GroundShadow.svelte';
   import Intro from './Parts/Intro.svelte';

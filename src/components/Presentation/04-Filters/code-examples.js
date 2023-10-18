@@ -242,10 +242,10 @@ export const drinkShadows = [
 export const maskImage = `
   .mask-image {
       mask-image: url(
-        /images/varun-gaba-wFlbBhVZTDI-unsplash.png
+        /images/varun-gaba-unsplash.png
       );
       -webkit-mask-image: url(
-        /images/varun-gaba-wFlbBhVZTDI-unsplash.png
+        /images/varun-gaba-unsplash.png
       );
 
       mask-size: 50%;

@@ -35,7 +35,7 @@
       height="1500"
       loading="lazy"
       class="clip-path-img-animate-a"
-      src="/images/max-bender-VmX3vmBecFE-unsplash.jpg"
+      src="/images/max-bender-unsplash.jpg"
       alt=""
     />
   </div>

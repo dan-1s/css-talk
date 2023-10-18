@@ -1,5 +1,5 @@
 <script>
-  import { fullscreen } from '../../../actions';
+  import { fullscreen } from '../../../actions/fullscreen';
   import Tabs from '../../Common/Tabs/Tabs.svelte';
   import Shapes from './Parts/Shapes.svelte';
   import AnimateA from './Parts/AnimateA.svelte';
