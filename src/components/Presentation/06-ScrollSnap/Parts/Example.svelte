@@ -55,7 +55,7 @@
     {#each images as _, i}
       {@const { ratio } = $intersect[`percent-${i + 1}`] || {}}
 
-      <span class="circle" style:--intersect="{ratio}"> </span>
+      <span class="circle" style:--intersect="{ratio}"></span>
     {/each}
   </div>
 </div>
