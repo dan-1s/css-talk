@@ -99,6 +99,9 @@
         You're all clear, kid. Let's blow this thing and go home! Hey, Luke! May
         the Force be with you.
       </p>
+      <a href="https://unused-css.com/tools/clip-path-generator">
+        Link to tool
+      </a>
     </div>
   </div>
 </div>
